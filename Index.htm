@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al's | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <span class="logo-purple">Al's</span> <span class="logo-white">Dev</span>
+      </div>      
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="color-toggle-icon">
+        <img id="theme-icon" src="icon/Magenta.png" alt="Toggle Color" />
+      </div>
+      <a href="https://github.com/Lanceyzxc" class="github-icon" target="_blank">
+        <img src="icon/github.png" alt="GitHub">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="content">
+        <div class="text">
+          <p class="intro">Hello, It's Me</p>
+          <h1>Alberto Devera</h1>
+          <p class="role">I'm a <span class="dynamic-role"></span></p>
+          <div class="welcome-section">
+            <h5>Welcome to my personal Portfolio. 👋</h5>
+            <a href="#portfolio" button class="cta-button">View Projects</a>
+          </div> 
+        </div>       
+        <div class="profile-picture">
+          <img src="img/Profile.png" alt="profile-picture">
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2><span class="logo-white">About</span><span class="logo-purple">Me</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am a detail-oriented information systems student. Fueled by a passion for technology, I'm excited to explore the dynamic world of information systems, combining my love for problem-solving with a keen interest in data analysis and software development. Eager to contribute to the ever-evolving tech landscape, I'm on a journey of learning and growth, ready to embrace the challenges and innovations that come my way.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <h3>Skills</h3>
+        <div class="skills-cards">
+          <div class="skill-card">
+            <img src="icon/html.png" alt="HTML Icon" class="skill-icon">
+            <div class="skill-info">
+              <h4>HTML</h4>
+            </div>
+          </div>
+          <div class="skill-card">
+            <img src="icon/CSS.png" alt="CSS Icon" class="skill-icon">
+            <div class="skill-info">
+              <h4>CSS</h4>
+            </div>
+          </div>
+          <div class="skill-card">
+            <img src="icon/java-script.png" alt="JavaScript Icon" class="skill-icon">
+            <div class="skill-info">
+              <h4>JavaScript</h4>
+            </div>
+          </div>
+          <div class="skill-card">
+            <img src="icon/SQL.png" alt="SQL Icon" class="skill-icon">
+            <div class="skill-info">
+              <h4>MySQL</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <a href="Resume.PNG" class="cta-button">Download My Resume</a>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2><span class="logo-white">My </span><span class="logo-purple">Portfolio</span></h2>
+      <div class="project-container">
+        <div class="project">
+          <img src="img/ZCAF.png" alt="Project 1" class="project-image" />
+          <div class="project-details">
+            <h3>ZCAF Online</h3>
+            <p>The official school website of Zion Christian Academy Foundation.</p>
+            <div class="technology-used">HTML, CSS, JavaScript, Json</div>
+            <a href="https://example.com" target="_blank">View Project</a>
+          </div>
+        </div>
+        
+        <div class="project centered">
+          <img src="img/BookWorm.png" alt="Project 2" class="project-image" />
+          <div class="project-details">
+            <h3>BookWorm</h3>
+            <p>An Android application for managing personal reading collections, built with innovative UI and robust features.</p>
+            <div class="technology-used">VS Code, Java, Canva</div>
+            <a href="https://example.com" target="_blank">View Project</a>
+          </div>
+        </div>
+        
+        <div class="project">
+          <img src="img/Hydro-Panic.png" alt="Project 3" class="project-image" />
+          <div class="project-details">
+            <h3>Hydro-Panic</h3>
+            <p>An application that provides real-time flood detection and response, monitors water levels, sends early warnings, and more.</p>
+            <div class="technology-used">Figma, Java, VS Code</div>
+            <a href="https://example.com" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="skills" id="skills">
+      <h2>Skills & Tools</h2>
+      <div class="skills-cards">
+        <div class="skill-card">
+          <img src="icon/html.png" alt="HTML Icon" class="skill-icon">
+          <div class="skill-text">HTML</div>
+        </div>
+        <div class="skill-card">
+          <img src="icon/css.png" alt="CSS Icon" class="skill-icon">
+          <div class="skill-text">CSS</div>
+        </div>
+        <div class="skill-card">
+          <img src="icon/java-script.png" alt="JavaScript Icon" class="skill-icon">
+          <div class="skill-text">JavaScript</div>
+        </div>
+        <div class="skill-card">
+          <img src="icon/sql.png" alt="SQL Icon" class="skill-icon">
+          <div class="skill-text">MySQL</div>
+        </div>
+        <div class="skill-card">
+          <img src="icon/python.png" alt="Python Icon" class="skill-icon">
+          <div class="skill-text">Python</div>
+        </div>
+        <div class="skill-card">
+          <img src="icon/Vs_code.png" alt="VS Code Icon" class="skill-icon">
+          <div class="skill-text">VS Code</div>
+        </div>
+        <div class="skill-card">
+          <img src="icon/android-studio.png" alt="Android Studio Icon" class="skill-icon">
+          <div class="skill-text">Android Studio</div>
+        </div>
+      </div>
+
+      <div class="category">
+        <h2>Frameworks / Libraries</h2>
+        <ul>
+          <li>React</li>
+          <li>Vue.js</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+
+      <div class="category">
+        <h2>Tools</h2>
+        <ul>
+          <li>VS Code</li>
+          <li>Git</li>
+          <li>Figma</li>
+          <li>XAMPP</li>
+          <li>Android Studio</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2><span class="logo-white">Contact</span><span class="logo-purple">Me</span></h2>
+      <form action="submit_form.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="https://www.facebook.com/itslanceyyy" target="_blank">
+          <img src="icon/facebook.png" alt="facebook Icon">
+        </a>
+        <a href="https://t.me/lanceyxzc" target="_blank">
+          <img src="icon/telegram.png" alt="telegram Icon">
+        </a>
+        <a href="mailto:albertodeverajr1@gmail.com" target="_blank">
+          <img src="icon/gmail.png" alt="gmail Icon">
+        </a>
+      </div>
+      <p>&copy; 2024 Alberto De Vera</p>
+    </div>
+  </footer>
+  
+
+  </main>
+</body>
+</html>
