@@ -14,11 +14,11 @@ body {
 
 /* Default Colors (Magenta) */
 :root {
-  --primary-color: #FF00FF; /* Magenta */
-  --secondary-color: #007BFF; /* Blue */
-  --button-bg: #FF00FF; /* Magenta */
-  --hover-bg: #0056b3; /* Darker Blue */
-  --project-hover-color: rgba(255, 0, 255, 0.4); /* Magenta Hover */
+  --primary-color: #FF00FF;
+  --secondary-color: #007BFF;
+  --button-bg: #FF00FF;
+  --hover-bg: #0056b3;
+  --project-hover-color: rgba(255, 0, 255, 0.4);
   --footer-link-color: #FF00FF;
   --footer-hover-color: #FF00FF;
   --skills-card-hover: #FF00FF;
@@ -26,11 +26,11 @@ body {
 
 /* Orange Theme Colors */
 :root.orange-theme {
-  --primary-color: #FFA500; /* Orange */
-  --secondary-color: #007BFF; /* Blue (unchanged) */
-  --button-bg: #FFA500; /* Orange */
+  --primary-color: #FFA500;
+  --secondary-color: #007BFF;
+  --button-bg: #FFA500;
   --hover-bg: #FF7F00; /* Darker Orange */
-  --project-hover-color: rgba(255, 165, 0, 0.4); /* Orange Hover */
+  --project-hover-color: rgba(255, 165, 0, 0.4);
   --footer-link-color: #FFA500;
   --footer-hover-color: #FFA500;
   --skills-card-hover: #FFA500;
@@ -77,7 +77,7 @@ body {
 /* Color Toggle Icon Style */
 .color-toggle-icon {
   cursor: pointer;
-  margin-right: 20px; /* Space between toggle and GitHub icon */
+  margin-right: 20px;
   transition: transform 0.3s ease;
 }
 
@@ -659,8 +659,8 @@ footer ul li a:focus {
 
 @media (max-width: 480px) {
   .skill-card {
-    width: 100%; /* One card per row */
-    aspect-ratio: 1 / 1; /* Keeps cards square */
+    width: 100%;
+    aspect-ratio: 1 / 1;
   }
 }
 
@@ -768,8 +768,8 @@ footer ul li a:focus {
   }
 
   .skill-card {
-    width: 45%; /* Approximately two cards per row */
-    aspect-ratio: 1 / 1; /* Keeps cards square */
+    width: 45%;
+    aspect-ratio: 1 / 1;
   }
 
   .skills-section {
