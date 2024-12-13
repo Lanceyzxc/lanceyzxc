@@ -874,6 +874,16 @@ footer ul li a:focus {
     font-size: 1rem;
   }
 
+  .success-message {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+
   /* Footer Section for Mobile */
   footer {
     padding: 10px 2rem;

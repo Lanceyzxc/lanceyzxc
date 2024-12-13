@@ -221,13 +221,19 @@
 
     <section class="contact" id="contact">
       <h2><span class="logo-white">Contact</span><span class="logo-purple">Me</span></h2>
-      <form action="submit_form.php" method="POST">
+      <form id="contactForm" action="submit_form.php" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit" class="cta-button">Send Message</button>
-    </form>    
+      </form>
+      
+      <!-- Success Message -->
+      <div id="successMessage" class="success-message" style="display: none;">
+        Message sent successfully!
+      </div>
     </section>
+    
   </main>
 
   <footer>
@@ -254,5 +260,6 @@
   </footer>
 
   </main>
+  </script>
 </body>
 </html>
