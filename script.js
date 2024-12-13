@@ -136,7 +136,6 @@ function validateForm() {
     return false;
   }
 
-  // Validate message (optional but can be customized)
   var message = document.getElementById("message").value;
   if (message.trim() === "") {
     document.getElementById("error-message").innerText = "Message is required.";
