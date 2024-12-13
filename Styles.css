@@ -257,7 +257,7 @@ body {
 }
 
 .skills h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 20px;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -419,7 +419,7 @@ body {
 }
 
 .skills h2 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 20px;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -525,6 +525,69 @@ body {
   font-size: 1rem;
   margin: 0;
 }
+
+/* Tools Section */
+.tools {
+  padding: 60px 20px;
+  background-color: #111;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tools h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+/* Tool Category Layout */
+.tool-category {
+  margin-bottom: 40px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Individual Icon Container */
+.tool-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tool-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.tool-icon:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect for Icon Image */
+.tool-icon:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
 
 /* Contact Section */
 .contact {
@@ -755,21 +818,20 @@ footer ul li a:focus {
     padding: 40px 20px;
   }
 
-  .skills h3 {
-    font-size: 1.5rem;
-    padding-left: 10px; 
-    padding-right: 10px; 
-    text-align: center; 
+  .portfolio h2 {
+    margin-top: -15px;
+    margin-bottom: 25px;
   }
 
-  .skills-cards {
-    justify-content: center;
-    gap: 10px;
+  .skills h3 {
+    font-size: 1.3rem;
   }
 
   .skill-card {
-    width: 45%;
+    width: 40%;
     aspect-ratio: 1 / 1;
+    justify-content: center;
+    gap: 10px;
   }
 
   .skills-section {
@@ -778,6 +840,11 @@ footer ul li a:focus {
 
   .skills {
     padding: 40px 20px;
+  }
+
+  .skills h2 {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
   }
 
   .project-container {
@@ -838,6 +905,7 @@ footer ul li a:focus {
   footer .social-media img {
     margin-top: -70px;
   }
+
 }
 
 /* Responsive Design */
