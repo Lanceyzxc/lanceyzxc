@@ -147,3 +147,15 @@ function validateForm() {
   // If all validations pass, allow form submission
   return true;
 }
+
+// Select all project cards
+const projects = document.querySelectorAll('.project');
+
+projects.forEach(project => {
+  project.addEventListener('touchstart', () => {
+    project.classList.add('hover');
+  });
+  project.addEventListener('touchend', () => {
+    project.classList.remove('hover');
+  });
+});
