@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         setTimeout(eraseRole, delayBetweenRoles);
       }
+
     }
 
     typeChar();
@@ -111,28 +112,4 @@ toggleIcon.addEventListener('click', () => {
     // If magenta theme is active, change back to the magenta icon
     toggleIcon.src = 'icon/Magenta.png'; // Change to your magenta icon image
   }
-});
-
-// Form submission handling (message success and field reset)
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("contactForm");
-  const successMessage = document.getElementById("successMessage");
-
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form from submitting immediately
-    
-    // Display the success message
-    successMessage.style.display = "block";
-    
-    // Clear the form fields
-    form.reset();
-    
-    // Optional: Hide the success message after 3 seconds
-    setTimeout(function() {
-      successMessage.style.display = "none";
-    }, 3000);
-    
-    // You can also add code here to send the form data to the server if needed
-    // For example, using fetch or XMLHttpRequest for AJAX submission
-  });
 });
