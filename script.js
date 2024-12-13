@@ -8,7 +8,7 @@ hamburger.addEventListener('click', () => {
 
 // Typing effect for roles
 document.addEventListener("DOMContentLoaded", () => {
-  const roles = ["Front-End Developer", "Problem Solver", "Student"];
+  const roles = ["Front-End Developer", "IS Student", "Coffee Enthusiast"];
   let index = 0;
   const roleElement = document.querySelector(".dynamic-role");
   let typeSpeed = 100; // Default type speed
@@ -159,3 +159,25 @@ projects.forEach(project => {
     project.classList.remove('hover');
   });
 });
+
+// Array of profile image sources
+const profileImages = [
+  'img/Profile.png',
+  'img/Profile2.png',
+  'img/Profile3.png',
+];
+
+// Select the profile image element
+const profileImageElement = document.getElementById('profile-img');
+
+// Initialize an index to track the current image
+let currentIndex = 0;
+
+// Function to change the profile image
+function changeProfileImage() {
+  currentIndex = (currentIndex + 1) % profileImages.length; // Cycle through the images
+  profileImageElement.src = profileImages[currentIndex];
+}
+
+// Call the function every 7 seconds
+setInterval(changeProfileImage, 7000);

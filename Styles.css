@@ -196,16 +196,17 @@ body {
 }
 
 .cta-button {
-  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
+  background-color: var(--primary-color);
   color: white;
-  background-color: #007BFF;
-  border: none;
+  text-decoration: none;
   border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
 .cta-button:hover {
@@ -215,9 +216,15 @@ body {
 
 .cta-button:active {
   background-color: #003f7f;
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
+.download-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
 
 .profile-picture {
   width: 300px;
