@@ -113,3 +113,37 @@ toggleIcon.addEventListener('click', () => {
     toggleIcon.src = 'icon/Magenta.png'; // Change to your magenta icon image
   }
 });
+
+function validateForm() {
+  // Hide previous error message
+  document.getElementById("error-message").style.display = "none";
+
+  // Validate name (only letters and spaces)
+  var name = document.getElementById("name").value;
+  var namePattern = /^[A-Za-z\s]+$/; // Only letters and spaces
+  if (name.trim() === "" || !namePattern.test(name)) {
+    document.getElementById("error-message").innerText = "Name must contain only letters and spaces.";
+    document.getElementById("error-message").style.display = "block";
+    return false;
+  }
+
+  // Validate email (basic email pattern)
+  var email = document.getElementById("email").value;
+  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  if (email.trim() === "" || !emailPattern.test(email)) {
+    document.getElementById("error-message").innerText = "Please enter a valid email address.";
+    document.getElementById("error-message").style.display = "block";
+    return false;
+  }
+
+  // Validate message (optional but can be customized)
+  var message = document.getElementById("message").value;
+  if (message.trim() === "") {
+    document.getElementById("error-message").innerText = "Message is required.";
+    document.getElementById("error-message").style.display = "block";
+    return false;
+  }
+
+  // If all validations pass, allow form submission
+  return true;
+}

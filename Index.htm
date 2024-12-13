@@ -221,17 +221,13 @@
 
     <section class="contact" id="contact">
       <h2><span class="logo-white">Contact</span><span class="logo-purple">Me</span></h2>
-      <form name="contact" netlify>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
+      <form name="contact" id="contact-form" netlify onsubmit="return validateForm()">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
         <button type="submit" class="cta-button">Send Message</button>
+        <p id="error-message" style="color: red; display: none;">Please fill out all fields correctly before submitting.</p>
       </form>
-      
-      <!-- Success Message -->
-      <div id="successMessage" class="success-message" style="display: none;">
-        Message sent successfully!
-      </div>
     </section>
     
   </main>
