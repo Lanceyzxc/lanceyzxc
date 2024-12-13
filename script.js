@@ -8,7 +8,7 @@ hamburger.addEventListener('click', () => {
 
 // Typing effect for roles
 document.addEventListener("DOMContentLoaded", () => {
-  const roles = ["Front-End Developer", "Information System", "Problem Solver"];
+  const roles = ["Front-End Developer", "Problem Solver", "Student"];
   let index = 0;
   const roleElement = document.querySelector(".dynamic-role");
   let typeSpeed = 100; // Default type speed
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       typeSpeed = 120;
       eraseSpeed = 60;
     } else { // For larger screens
-      typeSpeed = 90;
+      typeSpeed = 65;
       eraseSpeed = 75;
     }
   }
