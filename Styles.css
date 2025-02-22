@@ -186,28 +186,30 @@ body {
   font-size: 1.2rem;
 }
 
-.cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  background-color: var(--primary-color);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
+/* From Uiverse.io by mrhyddenn */ 
+.shadow__btn {
+  margin-top: 18px;
+  padding: 10px 18px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
 }
 
-.cta-button:hover {
-  background-color: darken(var(--button-bg), 10%);
-  transform: scale(1.05);
+.shadow__btn {
+  background: var(--primary-color);
+  box-shadow: 0 0 25px var(--primary-color);
 }
 
-.cta-button:active {
-  background-color: #003f7f;
-  transform: scale(0.98);
+.shadow__btn:hover {
+  box-shadow: 0 0 5px var(--primary-color),
+              0 0 25px var(--primary-color),
+              0 0 50px var(--primary-color),
+              0 0 100px var(--primary-color);
 }
 
 .download-icon {
@@ -263,24 +265,6 @@ body {
   margin-bottom: 20px;
   color: var(--primary-color);
   text-transform: uppercase;
-}
-
-.cta-button {
-  background-color: var(--primary-color);
-  color: rgb(255, 255, 255);
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.cta-button:hover {
-  background-color: var(--primary-color);
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Portfolio Section */
@@ -395,24 +379,6 @@ body {
   font-size: 1.1rem;
   color: var(--primary-color);
   font-weight: bold;
-}
-
-.project-details a {
-  background-color: var(--primary-color);
-  color: black;
-  padding: 8px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-details a:hover {
-  background-color: var(--primary-color);
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Centered Project (larger card) */
